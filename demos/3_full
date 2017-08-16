@@ -5,9 +5,6 @@ output="$HANDYDEV_ROOT/repos/presentation/demos/output"
 
 awk_script="$HOME/.bash_history_filter.awk"
 
-echo "Awking..."
 awk -f "$awk_script" "$input" > "$output"
 
-echo "check the diff"
-
-# vimdiff -MR "$input" "$output"
+e
