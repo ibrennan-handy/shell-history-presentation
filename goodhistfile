@@ -1,0 +1,170 @@
+#1501293178
+less vim
+#1501293238
+cd dotfiles/
+#1501293242
+ag HIST
+#1501293433
+cd -
+#1501293555
+less .bash_history
+#1501293607
+echo abcdefg
+#1501293351
+echo $HISTTIMEFORMAT 
+#1501293569
+irb
+#1501293728
+date "%s"
+#1501293748
+date "+%s"
+#1501293620
+less .bash_history 
+#1501302257
+echo f
+#1501302257
+echo g
+#1501302257
+}
+#1501293785
+less ~/.bash_history 
+#1501294146
+tail -20 ~/.bash_history 
+#1501294163
+tail -20 ~/.bash_history | head
+#1501294169
+tail -200 ~/.bash_history | head
+#1501294173
+tail -2000 ~/.bash_history | head
+#1501294182
+tail -8000 ~/.bash_history | head
+#1501294188
+tail -4000 ~/.bash_history | head
+#1501294197
+tail -3000 ~/.bash_history | head
+#1501294212
+tail -2500 ~/.bash_history | head
+#1501294224
+tail -2200 ~/.bash_history | head
+#1501294280
+tail -50 ~/.bash_history > raw_hist50
+#1501294330
+diff raw_hist50 <(cat raw_hist50)
+#1501294339
+diff raw_hist50 <(head raw_hist50)
+#1501294366
+less ~/.bash_history 
+#1501294472
+tail -20 ~/.bash_history > raw_hist20
+#1501294486
+rm raw_hist*
+#1501297387
+ignore='^ls:^man:^cat'
+#1501297404
+echo $ignore | awk 'BEGIN{FS=":"}{for (i=1;i<=NF;i++){print $i}}'
+#1501297521
+gnore=(
+#1501302257
+)
+#1501297558
+for p in ${gnore[@]}; do echo $p; done
+#1501297558
+for p in ${gnore[@]}; do echo $p; done
+#1501297638
+tr ':' '\n' $ignore 
+#1501297677
+ignore='^ls:^man:^cat'
+#1501297703
+echo $ignore | tr ':' '\n' 
+#1501297708
+echo $ignore
+#1501297728
+for i in $(echo $ignore | tr ':' '\n'); do
+#1501302257
+echo $i
+#1501302257
+done
+#1501301984
+cd code/handy/developer-toolkit/
+#1501301988
+ag mktemp
+#1501302055
+xyz=$(mktemp)
+#1501302058
+echo $xyz
+#1501302270
+echo abc
+#1501302280
+history -aw
+#1501302302
+cp ~/.bash_history ~/.bash_history.backup
+#1501302312
+tail ~/.bash_history 
+#1501302319
+wc -l ~/.bash_history
+#1501302331
+tail -100 ~/.bash_history
+#1501302348
+echo jjj
+#1501302361
+history -w
+#1501302055
+xyz=$(mktemp)
+#1501302058
+echo $xyz
+#1501302270
+echo abc
+#1501302280
+history -aw
+#1501302302
+cp ~/.bash_history ~/.bash_history.backup
+#1501302312
+tail ~/.bash_history 
+#1501302319
+wc -l ~/.bash_history
+#1501302331
+tail -100 ~/.bash_history
+#1501302348
+echo jjj
+#1501302361
+history -w
+#1501302368
+tail ~/.bash_history
+#1501302403
+history -w >(awk '{ print }')
+#1501304234
+. filter.sh 
+#1501304241
+tail ~/.bash_history.backup 
+#1501304269
+echo def
+#1501304273
+foo() {
+ls
+}
+#1501304302
+echo 8
+#1501304318
+filter_history 
+#1502852741
+usagetree() {
+    local -a uses
+    local pkg indent
+
+    uses=()
+    pkg=$1
+
+    while [[ -n "$pkg" ]]; do
+        uses=("$pkg" "${uses[@]}")
+        pkg=$(brew uses --installed "$pkg" 2>/dev/null)
+    done
+
+    echo
+    indent=''
+    for use in "${uses[@]}"; do
+        echo "${indent}${use}"
+        indent+=' '
+    done
+}
+#1502852797
+usagetree harfbuzz

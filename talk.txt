@@ -1,0 +1,35 @@
+I'd like to talk about shell history
+
+how can I use it?
+  ↑
+    ttyplay brewery
+  ctrl-r
+    live demo
+      hdy up
+      rspec
+      ammend
+  m-p
+    live demo
+      goro ios-consumer
+      ag chat_enabled
+      goro android-consumer
+      ag <m-p>
+
+multiline demo
+  ttyplay func
+  ttyplay contrived
+
+HISTIGNORE
+  ls /usr/local/Cellar/jq
+
+in-memory vs persisted
+  demo
+
+bashrc trap
+  see this orange code? run it when I exit
+
+bash_history_filter
+
+awk
+
+bash_history_filter.awk
