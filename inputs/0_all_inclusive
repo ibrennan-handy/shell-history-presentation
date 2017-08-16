@@ -1,0 +1,6 @@
+#1502466149
+git add lib/tasks/dev.rake
+#1502484653
+docker-compose -f docker-compose.console.yml run console rails c
+#1502482283
+ssh i-jumpbox.hbinternal.com

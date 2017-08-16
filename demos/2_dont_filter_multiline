@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+input="$HANDYDEV_ROOT/repos/presentation/inputs/2_dont_filter_multiline"
+
+bash "$HANDYDEV_ROOT/repos/presentation/demos/core" "$input"

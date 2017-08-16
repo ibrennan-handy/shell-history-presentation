@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+input="$HANDYDEV_ROOT/repos/presentation/inputs/1_filter_ls"
+
+bash "$HANDYDEV_ROOT/repos/presentation/demos/core" "$input"

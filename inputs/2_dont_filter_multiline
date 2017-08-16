@@ -1,0 +1,10 @@
+#1501860921
+cat handybook-rspec spec/services/marketplace/claim/job_claim_updater_spec.rb 
+#1501861657
+cat <<EOF
+BEFORE: adjusted_claimed_hourly_rate:   1500
+BEFORE: adjusted_potential_hourly_rate: 1500
+AFTER: adjusted_claimed_hourly_rate:   1650
+AFTER: adjusted_potential_hourly_rate: 1650
+EOF
+

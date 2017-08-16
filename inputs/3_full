@@ -1,0 +1,502 @@
+#1502720826
+for i in {1..4}; do
+echo "contrived example $i"
+echo
+done
+#1502720885
+for i {1..5}; do\
+#1502720905
+for i {1..5}; do
+#1502721562
+for i in {1..5}; do
+echo "contrived example $i"
+done
+#1502721573
+for i in {1..5}; do
+echo "contrived example $i"
+echo
+done
+#1502484552
+cat docker-compose.console.yml 
+#1502484634
+`aws ecr get-login`
+#1502484648
+`aws ecr get-login --no-include-email`
+#1502484653
+docker-compose -f docker-compose.console.yml run console rails c
+#1502482283
+ssh i-jumpbox.hbinternal.com 
+#1502483288
+hdy run handybook-rails-console 
+#1502487544
+hdy run handybook-dev-env bash
+#1502484648
+`aws ecr get-login --no-include-email`
+#1502484653
+docker-compose -f docker-compose.console.yml run console rails c
+#1502482283
+ssh i-jumpbox.hbinternal.com 
+#1502483288
+hdy run handybook-rails-console 
+#1502486614
+cd ..
+#1502486630
+mkdir jumio
+#1502486631
+cd jumio
+#1502486728
+mv ~/Downloads/pros_missing_photos\ \(1\).csv .
+#1502486749
+mv pros_missing_photos\ \(1\).csv pros_missing_photos.csv 
+#1502486809
+cd ../handybook/
+#1502486835
+curl 'https://gist.githubusercontent.com/tjohnell-handy/47a29ebefbb5a29160ab5d5b6bfea241/raw/2a3e6274e1a4522b52b5b02a711ce3b9160aba05/pull_local.rake' -o lib/tasks/pull_local.rake
+#1502486883
+cd ../jumio/
+#1502486889
+curl 'https://gist.githubusercontent.com/tjohnell-handy/a598d90f22c0ea7f2f1a7a0f5094927d/raw/690dd07de412cebb848a97accad5d4073c7ad87b/face_cropy.py' -O
+#1502487008
+mv ../jumio/pros_missing_photos.csv .
+#1502487049
+hdy run handybook-dev-env bash
+#1502487380
+hdy run handybook-dev-env bundle exec rake jumio:pull_local[/handydev/repos/handybook/pros_missing_photos.csv,/handydev/repos/handybook/export1,/handydev/repos/handybook/export1_failures.csv]
+#1502488826
+ssh p-jumpbox.hbinternal.com 
+#1502717159
+cd ../presentation/
+#1502717190
+docker rm e44581a03a14
+#1502717213
+docker rm fa564a569e38 1b84ec3baf70
+#1502717227
+docker rm 51507197653b
+#1502717229
+docker ps -a
+#1502717265
+hdy stop
+#1502717876
+rm dockerps 
+#1502717955
+ttyrec hdystart
+#1502718119
+rm hdystart 
+#1502718196
+rm ctrl-r
+#1502718198
+ttyrec ctrl-r
+#1502718550
+git init
+#1502718562
+ttyplay sql 
+#1502718572
+script -p sql 
+#1502718617
+hdy down
+#1502718662
+ttyrec serverup
+#1502718687
+ls
+#1502718782
+ttyplay brewery 
+#1502719047
+ttyplay brewery
+#1502719181
+ttyplay ctrl-r 
+#1502719236
+cd dotfiles/
+#1502719240
+v shell/inputrc 
+#1502719314
+man bash
+#1502719356
+cd -
+#1502719814
+view ~/.bash_history
+#1502472151
+brew install haskell-stack
+#1502472253
+cd code/
+#1502472260
+mkdir haskell
+#1502472262
+cd haskell
+#1502472274
+mkdir my-project
+#1502472275
+cd my-project
+#1502472476
+stack --help
+#1502472481
+man stack
+#1502472492
+stack --help | less
+#1502472515
+stack init
+#1502472526
+stack new
+#1502472539
+stack templates
+#1502472612
+l my-project/
+#1502472619
+rmdir my-project/
+#1502472626
+stack new my-project
+#1502472662
+cd my-project/
+#1502472668
+stack setup
+#1502472682
+stack build
+#1502472716
+stack exec my-project.cabal 
+#1502472724
+l app
+#1502472726
+l src/
+#1502472769
+stack ghci
+#1502472787
+stack
+#1502472801
+l
+#1502472820
+tree
+#1502719794
+cd ..
+#1502719914
+cd ../presentation/
+#1502719918
+ca <<EOF
+some heredoc
+spanning multiple lines
+EOF
+
+#1502719954
+cat <<EOF
+some heredoc
+spanning multiple lines
+EOF
+
+#1502719963
+foo() {
+echo "in function fooo"
+}
+#1502719996
+foo() {
+echo "in function foo"
+}
+#1502720017
+ttyrec foofunc
+#1502720038
+ttyplay foofunc 
+#1502720222
+cd ../handybook/
+#1502720238
+for file in *.yml; do
+echo "$file:"
+head -3 "$file"
+done
+#1502720292
+for file in *.yml; do
+echo "$file:"
+head -1 "$file"
+echo
+done
+#1502720441
+for file in *.yml; do
+echo "$file:"
+head -1 "$file"
+echo
+done
+#1502720471
+for file in *.yml; do
+echo "$file:"
+head -3 "$file"
+echo
+done
+#1502720587
+head docker-compose.development.yml 
+#1502720594
+for i in {1..5}; do
+head $i docker-compose.development.yml 
+done
+#1502720621
+for i in {1..5}; do
+head $i docker-compose.development.yml 
+echo
+done
+#1502720736
+for i in {1..5}; do
+echo "contrived example $i" 
+done
+#1502720751
+for i in {1..5}; do
+echo "contrived example $i" 
+echo
+done
+#1502720762
+cd -
+#1502721558
+ttyrec contrived
+#1502721646
+ls
+#1502721652
+ttyplay contrived 
+#1502721652
+ttyplay contrived 
+#1502725289
+cd ../android-consumer/
+#1502725292
+ag direct_sms_to_chat_enabled
+#1502725384
+goro android-consumer 
+#1502725289
+cd ../android-consumer/
+#1502725404
+goro ios-consumer 
+#1502725411
+goro android-consumer 
+#1502725414
+ag direct_sms_to_chat_enabled
+#1502720736
+for i in {1..5}; do
+#1502725056
+echo "contrived example $i" 
+#1502725056
+done
+#1502720751
+for i in {1..5}; do
+#1502725056
+echo "contrived example $i" 
+#1502725056
+echo
+#1502725056
+done
+#1502721558
+ttyrec contrived
+#1502721652
+ttyplay contrived 
+#1502725059
+cd ../ios-consumer/
+#1502725075
+ag direct_sms_to_chat_enabled
+#1502725086
+git log -S direct_sms_to_chat_enabled
+#1502725125
+git show 3a56604df
+#1502725170
+git show 67ba96eeb
+#1502725194
+cd ../android-consumer/
+#1502725196
+git pull
+#1502725247
+ttyrec config-params
+#1502725280
+ttyrec config-params 
+#1502725311
+cd -
+#1502725317
+mv config-params ../presentation/
+#1502725320
+cd ../presentation/
+#1502725328
+ttyplay config-params 
+#1502725400
+ttyrec ag
+#1502725422
+ls
+#1502725426
+rm config-params 
+#1502725428
+ttyplay ag
+#1502725428
+ttyplay ag
+#1502730172
+pod=$(kubectl get pods -n bob | grep "monolith" | cut -d' ' -f 1)
+#1502730221
+kubectl exec -it $pod --namespace bob -- bash -c "while :; do sleep 59; echo -n ' ' >&2; done & bash"
+#1502730272
+kubectl exec -it $pod --namespace bob -- bash
+#1502730505
+echo $pod
+#1502730971
+man awk
+#1502731112
+namespace=bob
+#1502731116
+service=monolith
+#1502731122
+kubectl get pods -n $namespace | grep "$service" | cut -d' ' -f 1
+#1502731144
+kubectl get pods -n $namespace | awk "/$service/" '{ print $1 }' 
+#1502731166
+kubectl get pods -n $namespace | awk "/$service/ "'{ print $1 }' 
+#1502731222
+kubectl get pods -n $namespace | awk -v pattern="$service" '$0 ~ pattern { print $1 }' 
+#1502732065
+v app/assets/javascripts/new_home.js 
+#1502736002
+git co master
+#1502724878
+cd
+#1502724879
+irb
+#1502724879
+irb
+#1502737047
+hdy up service-pricing-backend-server 
+#1502737053
+hdy ps
+#1502724770
+echo "contrived example $i" 
+#1502724770
+echo
+#1502724770
+done
+#1502720762
+cd -
+#1502721558
+ttyrec contrived
+#1502721646
+ls
+#1502721652
+ttyplay contrived 
+#1502727939
+hdy run handybook-rspec spec/helpers/mobile_bookings_controller_helper_spec.rb:508
+#1502728113
+hdy run handybook-rspec spec/models/services/email_event_spec.rb 
+#1502738824
+ssh i-jumpbox.hbinternal.com 
+#1502744050
+cd ../android-consumer/
+#1502744051
+ag prerate_pro_info
+#1502744060
+v
+#1502727939
+hdy run handybook-rspec spec/helpers/mobile_bookings_controller_helper_spec.rb:508
+#1502728113
+hdy run handybook-rspec spec/models/services/email_event_spec.rb 
+#1502743786
+ssh i-jumpbox.hbinternal.com 
+#1502747120
+git diff
+#1502747128
+git commit 
+#1502747254
+git add lib/tasks/dev.rake 
+#1502747255
+git ca
+#1502747258
+git commit --amend 
+#1502747376
+git push -u
+#1502805280
+git co master
+#1502805282
+vi
+#1502805353
+git pull
+#1502805379
+hdy run handybook-base bundle exec rake db:{migrate,test:prepare}
+#1502823783
+docker ps -aq
+#1502823804
+docker ps -a
+#1502823809
+docker ps -a
+#1502823860
+docker ps -a
+#1502823873
+docker ps -a
+#1502823885
+docker ps -a
+#1502823893
+docker ps -a
+#1502823903
+docker ps -a
+#1502823914
+diff <(docker ps -q) <(docker ps -qa)
+#1502823948
+docker ps -a
+#1502823961
+docker ps -a
+#1502823973
+diff <(docker ps -q) <(docker ps -qa)
+#1502727939
+hdy run handybook-rspec spec/helpers/mobile_bookings_controller_helper_spec.rb:508
+#1502728113
+hdy run handybook-rspec spec/models/services/email_event_spec.rb 
+#1502743786
+ssh i-jumpbox.hbinternal.com 
+#1502747120
+git diff
+#1502747128
+git commit 
+#1502747254
+git add lib/tasks/dev.rake 
+#1502747255
+git ca
+#1502747258
+git commit --amend 
+#1502747376
+git push -u
+#1502805280
+git co master
+#1502805282
+vi
+#1502805353
+git pull
+#1502805379
+hdy run handybook-base bundle exec rake db:{migrate,test:prepare}
+#1502823750
+cd ../presentation/
+#1502823900
+ttyrec dockerps
+#1502823958
+ttyrec dockerps2
+#1502823982
+mv dockerps{2,}
+#1502823988
+ttyplay dockerps 
+#1502824021
+ls
+#1502824025
+cd -
+#1502835364
+ag blackout app/json_schemas/validators/
+#1502897200
+hdy logs sync -f
+#1502912320
+ls
+#1502913103
+foo() {
+#1502913139
+foo() {
+echo "running function foo
+}
+"
+}
+#1502913165
+}
+#1502913167
+foo() {
+echo "Running foo"
+}
+#1502913192
+foo() {
+echo "Running foo"
+echo "and still running"
+}
+#1502913193
+foo
+#1502914395
+tail ~/.bash_history
+#1502914400
+ls
+#1502914403
+echo abc

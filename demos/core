@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+col_blue="\033[34;01m"
+col_green="\033[32;01m"
+col_reset="\033[39;49;00m"
+
+input=$1
+awk_script="$HOME/.bash_history_filter.awk"
+
+printf "%bINPUT:\n======%b\n" "$col_blue" "$col_reset"
+cat "$input"
+
+echo
+read -n 1 && printf "\b"
+
+printf "%bOUTPUT:\n=======%b\n" "$col_green" "$col_reset"
+awk -f "$awk_script" "$input"
