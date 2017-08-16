@@ -2,6 +2,7 @@ I'd like to talk about shell history
 
 how can I use it?
   ↑
+    ls /usr/local/Cellar/less
     ttyplay brewery
   ctrl-r
     live demo
@@ -16,20 +17,20 @@ how can I use it?
       ag <m-p>
 
 multiline demo
-  ttyplay func
+  ttyplay foo
   ttyplay contrived
 
 HISTIGNORE
-  ls /usr/local/Cellar/jq
+  jobs
+    vim abc
+  ls /usr/local/Cellar/less
 
 in-memory vs persisted
   demo
 
 bashrc trap
-  see this orange code? run it when I exit
-
 bash_history_filter
-
-awk
-
+awk example
 bash_history_filter.awk
+
+demo the filter
