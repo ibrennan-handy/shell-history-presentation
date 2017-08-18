@@ -8,7 +8,7 @@ how can I use it?
     live demo
       hdy up
       rspec
-      ammend
+      amend
   m-p
     live demo
       goro ios-consumer
