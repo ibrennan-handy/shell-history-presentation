@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-input="$HANDYDEV_ROOT/repos/presentation/inputs/3_full"
+input="$HANDYDEV_ROOT/repos/presentation/inputs/3full"
 output="$HANDYDEV_ROOT/repos/presentation/demos/output"
 
 awk_script="$HOME/.bash_history_filter.awk"

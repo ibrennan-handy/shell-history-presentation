@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-input="$HANDYDEV_ROOT/repos/presentation/inputs/0_all_inclusive"
+input="$HANDYDEV_ROOT/repos/presentation/inputs/2dontfiltermultiline"
 
 bash "$HANDYDEV_ROOT/repos/presentation/demos/core" "$input"
