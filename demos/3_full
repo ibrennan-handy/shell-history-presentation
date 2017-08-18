@@ -7,4 +7,13 @@ awk_script="$HOME/.bash_history_filter.awk"
 
 awk -f "$awk_script" "$input" > "$output"
 
-e
+nvim -dMR "$input" "$output" \
+  +'set nonumber nolist nocursorline foldtext=foldtext() foldcolumn=0' \
+  +'highlight DiffAdd guibg=#FBECEC' \
+  +'highlight DiffDelete guibg=#F7F8F9 guifg=#F7F8F9' \
+  +'wincmd w' \
+  +'set nonumber nolist nocursorline foldtext=foldtext() foldcolumn=0' \
+  +'wincmd w' \
+  +'nmap n ]czz' \
+  +'nmap p [czz' \
+  +'1'
