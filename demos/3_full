@@ -8,25 +8,20 @@ awk_script="$HOME/.bash_history_filter.awk"
 awk -f "$awk_script" "$input" > "$output"
 
 if [[ "$THEME" = 'light' ]]; then
-  nvim -dMR "$input" "$output" \
-    +'set nonumber nolist nocursorline foldtext=foldtext() foldcolumn=0' \
-    +'highlight DiffAdd guibg=#FBECEC' \
-    +'highlight DiffDelete guibg=#F7F8F9 guifg=#F7F8F9' \
-    +'wincmd w' \
-    +'set nonumber nolist nocursorline foldtext=foldtext() foldcolumn=0' \
-    +'wincmd w' \
-    +'nmap n ]czz' \
-    +'nmap p [czz' \
-    +'1'
+    diffadd_hi='highlight DiffAdd guibg=#FBECEC'
+    diffdel_hi='highlight DiffDelete guibg=#F7F8F9 guifg=#F7F8F9'
 else
-  nvim -dMR "$input" "$output" \
-    +'set nonumber nolist nocursorline foldtext=foldtext() foldcolumn=0' \
-    +'highlight DiffAdd guibg=#6A3F41 guifg=#BBBBBB' \
-    +'highlight DiffDelete guibg=#29303E guifg=#29303E' \
-    +'wincmd w' \
-    +'set nonumber nolist nocursorline foldtext=foldtext() foldcolumn=0' \
-    +'wincmd w' \
-    +'nmap n ]czz' \
-    +'nmap p [czz' \
-    +'1'
+    diffadd_hi='highlight DiffAdd guibg=#6A3F41 guifg=#BBBBBB'
+    diffdel_hi='highlight DiffDelete guibg=#29303E guifg=#29303E'
 fi
+
+nvim -dMR "$input" "$output" \
+  +'set nonumber nolist nocursorline foldtext=foldtext() foldcolumn=0' \
+  +"$diffadd_hi" \
+  +"$diffdel_hi" \
+  +'wincmd w' \
+  +'set nonumber nolist nocursorline foldtext=foldtext() foldcolumn=0' \
+  +'wincmd w' \
+  +'nmap n ]czz' \
+  +'nmap p [czz' \
+  +'1'
